@@ -100,7 +100,7 @@ Here is an example off how to listen for blur events.
 tinymce.init({
   selector: 'textarea',
   init_instance_callback: function (editor) {
-    editor.on('focus', function (e) {
+    editor.on('blur', function (e) {
       console.log('Editor was blurred!');
     });
   }
@@ -272,7 +272,7 @@ tinymce.init({
 
 ### Change
 
-This event gets fired when changes are made inside the editor that causes and undo level to be added.
+This event gets fired when changes are made inside the editor that causes an undo level to be added.
 
 Here is an example on how listen for editor changes.
 
